@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Iransans';
+  src: url('../fonts/IRANSansWebFaNum_Light.eot') format('eot');
+  src: url('../fonts/IRANSansWebFaNum_Light.ttf') format('truetype'),
+    url('../fonts/IRANSansWebFaNum_Light.woff') format('woff');
+}
+body {
+  font-family: 'Iransans';
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+}
+ul{
+  list-style: none;
+}
+.header-top{
+  height: 50px;
+  color: white;
+  background-color:#223144 ;
+  border-bottom: 1px solid rgba(213, 161, 61, 0.43);
+  display:none;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+.icon-right-headertop{
+  color: #fbab18;
+  margin-right: 0.5em;
+}
+.social-header-top{
+  margin-top:1.1em;
+ margin-left: -2em;
+}
+
+.social-header-top li{
+margin-right: 1em;
+}
+
+/* **************************************end header top************************************ */
+.nav-menu {
+  background-color: #223144;
+  height: 70px;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+  margin-right: -1.2em;
+}
+.nav-menu ul {
+ display: none;
+}
+.nav-menu li  {
+margin-left: 0.5em;
+}
+.nav-menu li a {
+  color: white;
+}
+.nav-menu li a:hover {
+  color: #fbab18;
+}
+.navbar-nav .nav-link.active {
+  color: #fbab18;
+}
+.form-nav-desk{
+  display: none;
+}
+.input-navbar {
+  border-radius: 1em;
+  background-color: #154c79;
+  color: white !important;
+  margin-top: 1em;
+  border: none;
+}
+.input-navbar::placeholder {
+  color: white !important;
+}
+.input-navbar:focus {
+  background-color: #154c79;
+}
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.icon-input {
+  color: white;
+  position: absolute;
+  top: 1.8em;
+  left: 1em;
+}
+.user{
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+/* **************************************end menu************************************ */
+.nav-response{
+  margin-top:0.6em;
+  margin-left: 2em;
+}
+.offcanvas {
+  background-color: #223144;
+}
+.navbar-toggler{
+  border: transparent;
+}
+.navbar-toggler:focus {
+  box-shadow: none 
+}
+/* **************************************end menu response************************************ */
+.carousel-head img{
+  height: 400px;
+  object-fit: cover;
+}
+.curtain{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+.carousel-control-next, .carousel-control-prev {
+top: 40%;
+width: 50px;
+height: 50px;
+}
+/* **************************************end carousel************************************ */
+.parent-card-services{
+  padding:0 2.2em;
+  margin-top: -5em;
+  position: relative;
+  z-index: 2;
+}
+.services {
+  text-align: center;
+
+
+}
+.services .card{
+padding: 3em 0;
+/* color: white;
+background-color:#223144  ; */
+}
+.services .card:hover{
+  color: white;
+  background-color:#223144  ;
+  }
+.services h5{
+  font-weight: bold;
+  margin:1em 0;
+}
+.services p{
+ font-size: 0.9em;
+ color: rgb(151, 151, 151);
+}
+.icon-services{
+  font-size:2.5em;
+  color:#fbab18 ;
+}
+.services .card:hover .icon-services{
+transform:rotateY(180deg);
+transition:0.5s;
+}

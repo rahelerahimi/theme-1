@@ -1,0 +1,44 @@
+@media screen and (max-width: 576px) {
+}
+/* small mobile */
+@media screen and (min-width: 577px) {
+}
+/* big mobile */
+@media screen and (min-width: 768px) {
+  .carousel-head img {
+    height: 450px;
+  }
+}
+/* tablet */
+@media screen and (min-width: 992px) {
+  .header-top {
+    display: flex;
+  }
+  .nav-response {
+    margin-top: 3.6em;
+  }
+  .nav-menu ul {
+    display: flex;
+    margin-left: 4.5em;
+  }
+  .nav-menu li {
+    margin-left: 0.2em;
+  }
+  .form-nav-desk {
+    display: flex;
+  }
+  .nav-response {
+    display: none;
+  }
+  /* ************************************* */
+  .carousel-head img {
+    height: 550px;
+  }
+}
+/* desktop */
+@media screen and (min-width: 1200px) {
+  .nav-menu ul {
+    margin-left: 8em;
+  }
+}
+/* x-large */
