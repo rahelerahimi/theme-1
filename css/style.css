@@ -4,115 +4,170 @@
   src: url('../fonts/IRANSansWebFaNum_Light.ttf') format('truetype'),
     url('../fonts/IRANSansWebFaNum_Light.woff') format('woff');
 }
+
 body {
   font-family: 'Iransans';
   direction: rtl;
   text-align: right;
   overflow-x: hidden;
 }
-ul{
+
+ul {
   list-style: none;
 }
-.header-top{
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin: 2em auto;
+  position: relative;
+
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #fbab18;
+  margin-top: 1.7em;
+  margin-right: -4.5em;
+
+}
+
+.card {
+  border: none;
+}
+
+.level {
+  padding: 0 2.3em 0 2em;
+}
+
+/* **************************************global************************************ */
+.header-top {
   height: 50px;
   color: white;
-  background-color:#223144 ;
+  background-color:#041c3f ;
   border-bottom: 1px solid rgba(213, 161, 61, 0.43);
-  display:none;
-  justify-content:space-between;
+  display: none;
+  justify-content: space-between;
   align-items: center;
   padding: 0 2em;
 }
-.icon-right-headertop{
+
+.icon-right-headertop {
   color: #fbab18;
-  margin-right: 0.5em;
-}
-.social-header-top{
-  margin-top:1.1em;
- margin-left: -2em;
 }
 
-.social-header-top li{
-margin-right: 1em;
+.text-right-headertop {
+  margin-right: 0.5em;
+}
+
+.social-header-top {
+  margin-top: 1.1em;
+  margin-left: -2em;
+}
+
+.social-header-top li {
+  margin-right: 1em;
 }
 
 /* **************************************end header top************************************ */
 .nav-menu {
-  background-color: #223144;
+  background-color: #041c3f;
   height: 70px;
 }
+
 .logo {
   width: 100px;
   height: 50px;
   margin-right: -1.2em;
 }
+
 .nav-menu ul {
- display: none;
+  display: none;
 }
-.nav-menu li  {
-margin-left: 0.5em;
+
+.nav-menu li {
+  margin-left: 0.5em;
 }
+
 .nav-menu li a {
   color: white;
 }
+
 .nav-menu li a:hover {
   color: #fbab18;
 }
+
 .navbar-nav .nav-link.active {
   color: #fbab18;
 }
-.form-nav-desk{
+
+.form-nav-desk {
   display: none;
 }
+
 .input-navbar {
   border-radius: 1em;
-  background-color: #154c79;
+  background-color: #223144 ;
   color: white !important;
   margin-top: 1em;
   border: none;
 }
+
 .input-navbar::placeholder {
   color: white !important;
 }
+
 .input-navbar:focus {
   background-color: #154c79;
 }
+
 .form-control:focus {
   border-color: transparent;
   box-shadow: none;
 }
+
 .icon-input {
   color: white;
   position: absolute;
   top: 1.8em;
   left: 1em;
 }
-.user{
+
+.user {
   color: white;
   margin-left: 1em;
   margin-right: 1em;
   font-size: 1.2em;
 }
-/* **************************************end menu************************************ */
-.nav-response{
-  margin-top:0.6em;
+
+/* **************************************end menu desktop************************************ */
+.nav-response {
+  margin-top: 0.6em;
   margin-left: 2em;
 }
+
 .offcanvas {
   background-color: #223144;
 }
-.navbar-toggler{
+
+.navbar-toggler {
   border: transparent;
 }
+
 .navbar-toggler:focus {
-  box-shadow: none 
+  box-shadow: none
 }
+
 /* **************************************end menu response************************************ */
-.carousel-head img{
+.carousel-head img {
   height: 400px;
   object-fit: cover;
 }
-.curtain{
+
+.curtain {
   position: absolute;
   top: 0;
   left: 0;
@@ -120,45 +175,217 @@ margin-left: 0.5em;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.397);
 }
-.carousel-control-next, .carousel-control-prev {
-top: 40%;
-width: 50px;
-height: 50px;
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 40%;
+  width: 50px;
+  height: 50px;
 }
+
+.carousel-control-prev {
+  margin-left: 1em;
+}
+
+.carousel-control-next {
+  margin-right: 1.4em;
+}
+
 /* **************************************end carousel************************************ */
-.parent-card-services{
-  padding:0 2.2em;
+.parent-card-services {
   margin-top: -5em;
+  margin-bottom: 6em;
   position: relative;
   z-index: 2;
 }
+
 .services {
   text-align: center;
-
-
 }
-.services .card{
-padding: 3em 0;
-/* color: white;
-background-color:#223144  ; */
+
+.services .card {
+  padding: 3em 0;
+  box-shadow: 0 0 7px #22314450;
 }
-.services .card:hover{
+
+.services .card:hover {
   color: white;
-  background-color:#223144  ;
-  }
-.services h5{
+  background-color: #223144;
+  transition: 0.5s;
+}
+
+.services .card-title {
+  color: black;
+  font-size: 1.3em;
   font-weight: bold;
-  margin:1em 0;
+  margin: 1em 0;
 }
-.services p{
- font-size: 0.9em;
- color: rgb(151, 151, 151);
+.services .card:hover .card-title {
+  color: white;
+
 }
-.icon-services{
-  font-size:2.5em;
-  color:#fbab18 ;
+.services p {
+  font-size: 0.9em;
+  color: rgb(151, 151, 151);
 }
-.services .card:hover .icon-services{
-transform:rotateY(180deg);
-transition:0.5s;
+
+.icon-services {
+  font-size: 2.5em;
+  color: #fbab18;
+
+}
+
+/* **************************************end services************************************ */
+.projects a::after {
+  position: absolute;
+  content: '';
+  bottom: 20%;
+  right: 3.3%;
+  width: 0;
+  height: 2px;
+  background-color: #fbab18;
+  z-index: 2;
+  transition: 0.8s;
+}
+
+.projects a:hover::after {
+  width: 90%;
+}
+
+.projects .card {
+  overflow: hidden;
+
+}
+
+.projects .card::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f22336c;
+  border-radius: 0.8em;
+  transition: 0.8s;
+
+}
+
+.projects .card:hover::after {
+  background-color: #0f2233ec;
+
+}
+
+.projects .card::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 10%;
+  width: 2px;
+  height: 0;
+  background-color: #fbab18;
+  z-index: 2;
+  transition: 0.8s;
+
+}
+
+.projects .card:hover::before {
+  height: 90%;
+}
+.projects img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.8em;
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+.projects .card:hover img {
+  transform: scale(1);
+  border-radius: 0.8em;
+}
+.projects .card-body {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+.projects .card h5 {
+  transition: 0.8s;
+}
+.projects .card:hover h5 {
+  margin-top: -1em;
+
+}
+/* **************************************end projects************************************ */
+.banner{
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 4em 2.5em;
+  margin: 4em 0;
+  color: white;
+  position: relative;
+
+}
+.banner::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#0f2233e1;
+}
+.banner .card{
+  border: 1px dashed white;
+}
+
+.banner .card-text{
+  font-weight: bold;
+}
+.banner .card-body span{
+font-size:1.5em;
+}
+
+.banner .card-title{
+padding: 0 0.5em;
+font-size:1.5em;
+color: white;
+font-weight:900;
+}
+/* **************************************end banner************************************ */
+
+.Quote{
+  background-color:#f1a005;
+  color: black ;
+  margin: 0 2em;
+  padding: 1.5em 2em;
+  border-radius: 1em;
+display: flex;
+justify-content: space-between;
+
+}
+.Quote-title{
+  font-weight:bold;
+  font-size: 1.5em;
+}
+.Quote .icon-email{
+  background-color:#0f2233e1 ;
+  padding: 1em;
+  border-radius: 50%;
+  color: white;
+  font-size: 1em;
+}
+.Quote .call-us{
+  border-radius: 1.5em;
+  background-color:#0f2233e1 ;
+  color: white;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  line-height: 2.5;
+  margin-top: 2.5em;
 }
