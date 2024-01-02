@@ -1,37 +1,59 @@
+.about-1 {
+  padding:1em 0 3.7em 0;
+}
 
+.about-1 p:nth-of-type(2) {
+  text-align: justify;
+  color: rgb(97, 97, 97);
+}
 
-.banner-top figure {
-     position: relative;
-     margin-top: -3em;
-     z-index:-1;
+.about-1 figure {
+  box-shadow: -4px -4px 2px #f7b741;
+  padding: 0.4em;
+  display: none;
 }
-.banner-top figure::after {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.705);
+
+.about-1 figure img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
 }
-.banner-top figure img {
-     width: 100%;
-     height: 250px;
+
+/* **************************************end about us************************************ */
+
+.about-service span {
+  color: #f7b741;
+  background-color: #03192b;
+  font-size: 2em;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.banner-top .benertop-text {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50px, -50px);
-     color: white;
-     z-index: 3;
+
+.about-service .card-title {
+  font-weight: bold;
+  margin-top: 1em;
 }
-.banner-top .benertop-text p:nth-of-type(1) {
-     font-family: 'IransansBold';
-     font-weight: bold;
-     font-size: 1.7em;
+
+.about-service .card-text {
+  margin-top: 1em;
+  color: rgb(97, 97, 97);
 }
-.banner-top .benertop-text p:nth-of-type(2) {
-     font-size:0.9em;
+
+/* **************************************end about-service************************************ */
+@media screen and (min-width: 992px) {
+     .banner-top figure {
+     margin-top:0;
 }
-/* **************************************banner top************************************ */
+.about-1 p:nth-of-type(2){
+     padding-left:3em;
+    
+}
+.about-1 figure{ 
+     display:block;
+ }
+}
