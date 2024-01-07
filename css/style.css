@@ -31,7 +31,6 @@ a {
   font-weight: bold;
   margin: 2em auto;
   position: relative;
-
 }
 
 .title::after {
@@ -54,6 +53,16 @@ a {
 
 .level {
   padding: 0 2.3em 0 2em;
+}
+.btn-color {
+  color: #223144;
+  background-color: #fbab18;
+
+}
+.btn-color:hover {
+  color: #223144;
+  background-color: #fbab18;
+
 }
 /* **************************************global css************************************ */
 .banner-top figure {
@@ -112,9 +121,7 @@ a {
   padding: 15px;
   border-radius: 50%;
   transition: 1s;
-
 }
-
 
 #myBtn:hover {
   background-color: #0b2b5c;
@@ -131,7 +138,6 @@ a {
   align-items: center;
   padding: 0 2em;
   width: 100%;
-
 }
 
 .icon-right-headertop {
@@ -175,7 +181,6 @@ a {
 .nav-menu ul {
   display: none;
   margin-left: 15% !important;
-
 }
 
 .nav-menu li {
@@ -207,7 +212,7 @@ a {
 .nav-menu .thubmenu ul {
   display: flex;
   flex-direction: column;
-  background-color:#041c3f ;
+  background-color: #041c3f;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   min-width: 160px;
   text-align: right;
@@ -215,18 +220,16 @@ a {
   top: 13px;
   left: -55px;
   padding: 0.8em 1em;
-  border-bottom:5px solid #fbab18 ;
+  border-bottom: 5px solid #fbab18;
   border-radius: 8px;
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
-
 }
 
 .nav-menu .thubmenu ul li {
   width: 100%;
   margin: 0.4em 0;
-
 }
 
 .nav-menu .thubmenu ul li a {
@@ -234,7 +237,9 @@ a {
   display: block;
   width: 100%;
 }
-
+.nav-menu .thubmenu ul li .active-thubmenu {
+  color: #fbab18;
+}
 .nav-menu .thubmenu ul li a:hover {
   color: #fbab18;
 }
@@ -294,7 +299,7 @@ a {
 }
 
 .nav-response a:hover {
-  color: #fbab18
+  color: #fbab18;
 }
 
 .navbar-toggler {
@@ -303,7 +308,7 @@ a {
 }
 
 .navbar-toggler:focus {
-  box-shadow: none
+  box-shadow: none;
 }
 
 .offcanvas.offcanvas-end {
@@ -318,7 +323,6 @@ a {
 
 .btn-close:focus {
   box-shadow: none;
-
 }
 
 .dropdown-menu {
@@ -338,7 +342,6 @@ a {
 .dropdown-item:hover {
   background-color: transparent;
 }
-
 
 /* **************************************end menu response************************************ */
 .carousel-head {
@@ -406,7 +409,6 @@ a {
 
 .services .card:hover .card-title {
   color: white;
-
 }
 
 .services p {
@@ -418,14 +420,12 @@ a {
   font-size: 2.5em;
   color: #fbab18;
   transition: 1s;
-
 }
 
 .services .card:hover .icon-services {
   color: white;
   animation-name: fadeIcon;
   animation-duration: 1s;
-
 }
 
 @keyframes fadeIcon {
@@ -474,12 +474,10 @@ a {
   background-color: #0f22336c;
   border-radius: 0.8em;
   transition: 0.8s;
-
 }
 
 .projects .card:hover::after {
   background-color: #0f2233ec;
-
 }
 
 .projects .card::before {
@@ -492,8 +490,6 @@ a {
   background-color: #fbab18;
   z-index: 2;
   transition: 0.8s;
-
-
 }
 
 .projects .card:hover::before {
@@ -504,12 +500,12 @@ a {
   height: 300px;
   object-fit: cover;
   border-radius: 0.8em;
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.8s;
 }
 
 .projects .card:hover img {
-  transform: scale(1);
+  transform: scale(1.1);
   border-radius: 0.8em;
 }
 
@@ -528,7 +524,6 @@ a {
 
 .projects .card:hover p {
   margin-top: -1em;
-
 }
 
 /* **************************************end projects************************************ */
@@ -540,7 +535,6 @@ a {
   margin: 4em 0;
   color: white;
   position: relative;
-
 }
 
 .banner::after {
@@ -576,7 +570,6 @@ a {
   font-weight: bold;
 }
 
-
 /* **************************************end banner************************************ */
 .blog .content-swiper-slider {
   box-shadow: 0 0 5px silver;
@@ -585,13 +578,12 @@ a {
 
 .blog .swiper-wrapper {
   height: 530px !important;
-
 }
 
 .blog .swiper-slide .title-blog {
   font-size: 0.8em;
   font-weight: bold;
-  color: #0d0d0e;
+  color: black;
   transition: 0.4s;
 }
 
@@ -623,17 +615,17 @@ a {
 .blog .swiper-slide img {
   height: 210px;
   width: 100%;
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.8s;
 }
 
 .blog .swiper-slide:hover img {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .blog .swiper-slide .date-blog {
   font-size: 0.8em;
-  color: #f1a005;
+  color: #7a7a7a;
   font-weight: bold;
   margin: 1em;
 }
@@ -643,14 +635,33 @@ a {
   margin-top: 1em;
   color: dimgrey;
 }
-
-.blog .user-blog {
-  font-size: 0.8em;
-  color: #f1a005;
-
+.blog .more-blog a {
+  display: flex;
+  font-size: 0.9em;
 }
-
-
+.blog .more-blog span:nth-of-type(1) {
+  color: white;
+  background-color: #f1a005;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.blog .more-blog a:hover span:nth-of-type(1) {
+  transform: rotate(360deg);
+}
+.blog .more-blog span:nth-of-type(2) {
+  transform: translateY(0.3em);
+  color: #f1a005;
+  padding-right: 0.1em;
+  transition: 0.5s;
+}
+.blog .more-blog a:hover span:nth-of-type(2) {
+  padding-right: 0.4em;
+}
 
 /* **************************************end blog************************************ */
 .Quote {
@@ -662,7 +673,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .Quote-title {
@@ -688,15 +698,12 @@ a {
   text-align: center;
   line-height: 2.5;
   margin-top: 2.5em;
-
-
 }
 
 /* **************************************end Quote************************************ */
 
 .team {
   margin: 5em 0 5em 0.2em;
-
 }
 
 .team .card {
@@ -712,14 +719,14 @@ a {
 }
 
 .team .card img {
+  width: 100%;
   height: 250px;
-  object-fit: cover;
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.8s;
 }
 
 .team .card:hover img {
-  transform: scale(1);
+  transform: scale(1.1);
   transform-origin: center center;
 }
 
@@ -727,14 +734,9 @@ a {
   margin-top: 1em;
 }
 
-.team .link-title-team {
+.team .card-title {
   font-weight: bold;
   color: #0f2233ec;
-  transition: 0.4s;
-}
-
-.team .link-title-team:hover {
-  color: #f1a005;
 }
 
 .team .card p:nth-of-type(2) {
@@ -826,7 +828,6 @@ a {
   box-shadow: 0 0 5px silver;
   padding: 3em 1em;
   border-radius: 1em;
-
 }
 
 .Customers-carousel img {
@@ -861,7 +862,6 @@ a {
   font-size: 1em;
   margin-top: 4em;
   width: 100%;
-
 }
 
 .footer img {
@@ -872,7 +872,6 @@ a {
 
 .footer .caption-footer {
   text-align: justify;
-
 }
 
 .footer .social-footer {
@@ -881,18 +880,15 @@ a {
 
 .footer .list-footer-right {
   margin-right: -2.3em;
-
 }
 
 .footer .list-footer-left {
   margin-right: -2.3em;
-
 }
 
 .footer .list-footer-right ul,
 .footer .list-footer-left ul {
   width: 70%;
-
 }
 
 .footer .social-footer li {
@@ -921,12 +917,10 @@ a {
   margin-top: 0.5em;
   display: block;
   width: auto;
-
 }
 
 .footer a li:hover {
   color: #f1a005;
-
 }
 
 .copyright {

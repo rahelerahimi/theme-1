@@ -8,14 +8,14 @@
 }
 
 .about-1 figure {
-  box-shadow: -4px -4px 2px #f7b741;
+  box-shadow: -4px -4px 2px #f7b741,4px 4px 2px #f7b741;
   padding: 0.4em;
   display: none;
 }
 
 .about-1 figure img {
   width: 100%;
-  height: 320px;
+  height: 310px;
   object-fit: cover;
 }
 
@@ -46,9 +46,7 @@
 
 /* **************************************end about-service************************************ */
 @media screen and (min-width: 992px) {
-     .banner-top figure {
-     margin-top:0;
-}
+
 .about-1 p:nth-of-type(2){
      padding-left:3em;
     

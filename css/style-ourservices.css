@@ -1,0 +1,25 @@
+.all-services {
+  margin-top: 6em;
+}
+.all-services .parent-card-services {
+  margin-top: 5em;
+}
+.banner-service {
+  background-color: #223144;
+  color: white;
+}
+.banner-service P:nth-of-type(2) {
+  font-family: 'IransansBold';
+  font-size: 2em;
+  color: #fbab18;
+  margin: 0.7em 0;
+}
+.services-caption {
+  margin-top: 6em;
+}
+.services-caption p:nth-of-type(2) {
+  text-align: justify;
+}
+.services-caption img {
+  height: 400px;
+}

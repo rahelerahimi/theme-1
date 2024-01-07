@@ -17,6 +17,7 @@
 }
 /* tablet */
 @media screen and (min-width: 992px) {
+
   .header-top {
     display: flex;
   }
@@ -36,6 +37,9 @@
   .nav-response {
     display: none;
   }
+  .banner-top figure {
+    margin-top:0;
+}
   .carousel-head {
     margin-top: 0;
   }
