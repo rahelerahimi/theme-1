@@ -10,12 +10,21 @@
 }
 .banner-service P:nth-of-type(2) {
   font-family: 'IransansBold';
-  font-size: 2em;
+  font-size: 1.7em;
   color: #fbab18;
   margin: 0.7em 0;
 }
+.banner-service P:nth-of-type(3) {
+width:100%;
+margin: 0 auto;
+}
 .services-caption {
   margin-top: 6em;
+}
+.services-caption .title-Customers{
+margin-left: 0;
+font-size: 1.1em;
+
 }
 .services-caption p:nth-of-type(2) {
   text-align: justify;
@@ -23,3 +32,17 @@
 .services-caption img {
   height: 400px;
 }
+/* ********************************************* */
+@media screen and (min-width: 768px) {
+  .services-caption .title-Customers{
+    margin-left:3em;
+    font-size:1.2em;
+    }
+  .banner-service P:nth-of-type(2) {
+    font-size: 2em;
+  }
+  .banner-service P:nth-of-type(3) {
+    width: 50%;
+    }
+}
+/* tablet */

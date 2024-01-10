@@ -27,6 +27,7 @@ a {
 }
 
 .title {
+  font-size: 1.3em;
   text-align: center;
   font-weight: bold;
   margin: 2em auto;
@@ -45,7 +46,9 @@ a {
   left: 0;
   right: 0;
 }
-
+.text-justify{
+  text-align: justify;
+}
 .card {
   border: none;
   text-align: center;
@@ -57,14 +60,36 @@ a {
 .btn-color {
   color: #223144;
   background-color: #fbab18;
-
 }
 .btn-color:hover {
   color: #223144;
   background-color: #fbab18;
-
 }
-/* **************************************global css************************************ */
+
+.list-icon {
+  color: #082044;
+  background-color: #fbab18;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-title {
+  color: #082044;
+  font-weight: bold;
+  margin-top: 0.2em;
+}
+
+.list-subtitle {
+  margin-top: 0.6em;
+  margin-right: 2em;
+  color: rgb(99, 98, 98);
+}
+/* **************************************Common css************************************ */
 .banner-top figure {
   position: relative;
   margin-top: -3em;
@@ -86,25 +111,27 @@ a {
 }
 
 .banner-top .benertop-text {
+  text-align: center ;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50px, -50px);
+  transform: translate(-50%, -50%);
   color: white;
   z-index: 3;
 }
 
 .banner-top .benertop-text p:nth-of-type(1) {
   font-family: 'IransansBold';
+  text-align: content;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .banner-top .benertop-text p:nth-of-type(2) {
   font-size: 0.9em;
 }
 
-/* **************************************banner-top ************************************ */
+/* **************************************banner-top common css************************************ */
 #myBtn {
   display: none;
   position: fixed;
@@ -129,14 +156,14 @@ a {
 
 /* **************************************to top************************************ */
 .header-top {
-  height: 50px;
+  height:50px;
   color: white;
   background-color: #041c3f;
   border-bottom: 1px solid rgba(213, 161, 61, 0.43);
   display: none;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding:0 2em;
   width: 100%;
 }
 
@@ -168,7 +195,7 @@ a {
 /* **************************************end header top************************************ */
 .nav-menu {
   background-color: #041c3f;
-  height: 70px;
+  height:70px;
   width: 100%;
 }
 
@@ -176,6 +203,7 @@ a {
   width: 100px;
   height: 50px;
   margin-right: -1.2em;
+  margin-top: -0.3em;
 }
 
 .nav-menu ul {
@@ -285,7 +313,7 @@ a {
 
 /* **************************************end menu desktop************************************ */
 .nav-response {
-  margin-top: 0.6em;
+  margin-top: 0.7em;
   margin-left: 2em;
 }
 
@@ -304,7 +332,7 @@ a {
 
 .navbar-toggler {
   border: transparent;
-  margin-top: -110px;
+  margin-top: -125px;
 }
 
 .navbar-toggler:focus {

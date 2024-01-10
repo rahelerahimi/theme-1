@@ -5,6 +5,12 @@
 }
 /* big mobile */
 @media screen and (min-width: 768px) {
+  .title {
+    font-size: 1.6em;
+  }
+  .banner-top .benertop-text p:nth-of-type(1) {
+    font-size: 2.2em;
+  }
   .carousel-head img {
     height: 450px;
   }
@@ -31,6 +37,7 @@
   .nav-menu li {
     margin-left: 0.2em;
   }
+
   .form-nav-desk {
     display: flex;
   }
