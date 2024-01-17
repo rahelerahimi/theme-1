@@ -42,10 +42,7 @@ hr {
   color: black;
   margin: 1.5em 0;
 }
-.comment-form .form-control {
-  border: 1px solid #e0dfdf;
-  border-radius: 8px;
-}
+
 /* ***************************************************** */
 @media screen and (min-width: 1200px) {
   .describe-project{

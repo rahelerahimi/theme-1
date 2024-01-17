@@ -15,14 +15,10 @@
 .callus-section ul li {
   margin-top: 1.5em;
 }
-.callus-section form .form-control {
-  border: 1px solid #e6e6e6;
-  border-radius: 8px;
-}
 
-.callus-section form .form-control::placeholder {
+/* .callus-section form .form-control::placeholder {
   color: rgb(170, 169, 169);
-}
+} */
 /* *********************************************************************** */
 @media screen and (min-width: 1200px) {
   .callus-section .callus-caption {

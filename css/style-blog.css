@@ -1,0 +1,19 @@
+.blog-list .card {
+  box-shadow: 0 0 5px silver;
+  border-radius: 1em;
+  margin-top: 2em;
+  text-align: right;
+  font-size:1em!important;
+}
+
+.blog-list .card:hover .img-blog {
+    transform: scale(1.1);
+}
+
+.blog-list .title-blog ,
+.blog-list .caption-blog,
+.blog-list .date-blog
+{
+  font-size:1em!important;
+}
+
