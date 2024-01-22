@@ -1,19 +1,30 @@
+.blog-list {
+  margin-top: 5em;
+}
+
 .blog-list .card {
   box-shadow: 0 0 5px silver;
   border-radius: 1em;
   margin-top: 2em;
   text-align: right;
-  font-size:1em!important;
+  font-size: 0.9em !important;
 }
 
 .blog-list .card:hover .img-blog {
-    transform: scale(1.1);
+  transform: scale(1.1);
+}
+.blog-list .title-blog {
+  margin-top: -1em;
 }
 
-.blog-list .title-blog ,
+.blog-list .title-blog,
 .blog-list .caption-blog,
-.blog-list .date-blog
-{
-  font-size:1em!important;
+.blog-list .date-blog {
+  font-size: 1em !important;
 }
 
+@media screen and (min-width: 768px) {
+  .blog-list .card {
+    font-size: 1em !important;
+  }
+}

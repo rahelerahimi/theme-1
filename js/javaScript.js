@@ -55,7 +55,7 @@ var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    768: {
+    992: {
       slidesPerView: 3,
       spaceBetween: 30
     }
@@ -77,3 +77,26 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 // ---------------------------------accordeon-------------------------------------------
+
+// گرفتن المان‌های دکمه و کانتر خرید از طریق شناسه‌های آنها
+var increaseButton = document.getElementById('increase');
+var decreaseButton = document.getElementById('decrease');
+var counterElement = document.getElementById('counter');
+// تعریف متغیر برای نگه‌داری مقدار کانتر خرید
+var counterValue = 0;
+// تابعی برای افزایش مقدار کانتر خرید
+function increaseCounter() {
+    counterValue++;
+    counterElement.innerText = counterValue;
+}
+// تابعی برای کاهش مقدار کانتر خرید
+function decreaseCounter() {
+    if (counterValue > 0) {
+        counterValue--;
+        counterElement.innerText = counterValue;
+    }
+}
+// افزودن رویداد کلیک به دکمه های + و -
+increaseButton.addEventListener('click', increaseCounter);
+decreaseButton.addEventListener('click', decreaseCounter);
+// ---------------------------------product-add------------------------------------------

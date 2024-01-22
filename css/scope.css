@@ -20,10 +20,21 @@
   .title-Customers-left {
     margin-top: 0;
   }
+  .date-blog {
+    font-size: 1em;
+  }
+  .title-blog {
+    font-size: 1em;
+  }
+  .blog .swiper-slide .caption-blog {
+    font-size: 1em;
+  }
+  .blog .user-blog {
+    font-size: 1em;
+  }
 }
 /* tablet */
 @media screen and (min-width: 992px) {
-
   .header-top {
     display: flex;
   }
@@ -32,7 +43,7 @@
   }
   .nav-menu ul {
     display: flex;
-    margin-left: 4em;
+     margin-left: 4em;
   }
   .nav-menu li {
     margin-left: 0.2em;
@@ -45,26 +56,15 @@
     display: none;
   }
   .banner-top figure {
-    margin-top:0;
-}
+    margin-top: 0;
+  }
   .carousel-head {
     margin-top: 0;
   }
   .carousel-head img {
     height: 600px;
   }
-  .blog .swiper-slide .date-blog {
-    font-size: 1em;
-  }
-  .blog .swiper-slide .title-blog {
-    font-size: 1em;
-  }
-  .blog .swiper-slide .caption-blog {
-    font-size: 1em;
-  }
-  .blog .user-blog {
-    font-size: 1em;
-  }
+
   .footer .list-footer-right ul,
   .footer .list-footer-left ul {
     width: auto;
@@ -73,7 +73,7 @@
 /* desktop */
 @media screen and (min-width: 1200px) {
   .nav-menu ul {
-    margin-left: 8em;
+     margin-left: 8em;
   }
   .about-section img {
     display: block;

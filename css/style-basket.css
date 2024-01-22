@@ -1,0 +1,79 @@
+
+.basket table tr {
+  vertical-align: middle;
+  text-align: center;
+}
+.basket table td:nth-of-type(6) {
+  padding-left: 3em;
+}
+.basket table .product-thumbnail img {
+  width: 70px;
+  height: 60px;
+transform: translateY(0.5em);
+}
+.basket table .product-title a {
+  font-weight: bold;
+  color: black;
+}
+.basket table .product-price2,
+.basket table .product-quantity {
+  color: #666666;
+}
+.basket table .product-delete {
+  color: gray;
+  cursor: pointer;
+}
+.basket table .product-delete:hover {
+  color: #fbab18;
+}
+.basket .btn-color {
+  height: 40px;
+  margin-right: 0.5em;
+}
+.basket .update-basket {
+  width: 200px !important;
+}
+.basket .form-control {
+  height: 40px !important;
+}
+.cart-total {
+  margin: 5em 0;
+  padding-right: 3em;
+}
+.cart-total p {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+.cart-total ul {
+  padding-left: 0;
+  transform: translateX(2.5em);
+}
+.cart-total ul li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eaedff;
+  padding: 11px 15px;
+  vertical-align: middle;
+}
+.cart-total ul li span:nth-of-type(1) {
+  color: black;
+  margin-left: 1em;
+  text-align: right;
+}
+.cart-total ul li span:nth-of-type(2) {
+  color: #666666;
+  text-align: left;
+}
+.cart-total .btn-color {
+  margin: 1em 0;
+}
+/* ******************************************************** */
+@media screen and (min-width: 577px) {
+  .basket table tr {
+    text-align: right;
+  }
+  .basket table td:nth-of-type(6) {
+    padding-left: 0;
+  }
+}

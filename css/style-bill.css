@@ -1,0 +1,63 @@
+.bill {
+  margin-top: 4em;
+}
+.user-action {
+  border-top: 3px solid #fbab18;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+.user-action span:nth-of-type(1) {
+  color: #fbab18;
+}
+.user-action span:nth-of-type(2) {
+  margin: 0 0.1em;
+  color: rgb(104, 104, 104);
+}
+.user-action a {
+  color: #fbab18;
+  font-weight: bold;
+}
+.bill .title-bill {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+.bill-details {
+  padding-left: 2.5em;
+}
+.bill-details .form-check-label {
+  margin-right: 2em;
+}
+.bill-details label,
+option {
+  color: rgb(104, 104, 104);
+}
+.bill .table-bordered {
+  border-color: #e6e8e9;
+}
+.bill table tr td {
+  padding-right: 0.7em;
+  font-size: 0.9em;
+}
+.payment-box .form-check-label {
+  color: black;
+  margin-right: 2em;
+  font-weight: bold;
+}
+.form-check-input:focus {
+  box-shadow: none;
+  color: #fbab18;
+}
+.payment-box p {
+  background-color: #ececec;
+  color: #8e8d8d;
+  text-align: justify;
+  padding: 1.3em 1.5em;
+  margin-top: 1em;
+}
+@media screen and (min-width: 577px) {
+  .bill table tr td {
+    padding-right: 1.5em;
+    font-size: 1em;
+  }
+}

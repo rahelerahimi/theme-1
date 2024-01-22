@@ -1,0 +1,78 @@
+.product-detail {
+  margin-top: 5em;
+}
+.product-detail .carousel img {
+  height:350px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.product-details-desc {
+  padding-right: 2em;
+}
+.product-name {
+  font-family: 'IransansBold';
+  font-size: 1.2em;
+}
+
+.star-poduct {
+  display: flex;
+  transform: translateX(2.5em);
+}
+.star-poduct li {
+  color: #fbab18;
+  margin: 0 0.1em;
+}
+.product-price {
+  display: flex;
+  font-weight: bold;
+}
+.product-price span:nth-of-type(1) {
+  color: #fbab18;
+}
+.product-price span:nth-of-type(2) {
+  color: gray;
+  margin-right: 0.7em;
+  text-decoration: line-through;
+}
+
+.product-tab {
+  margin-top: 4em;
+}
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  background-color: rgb(230, 230, 230);
+  color: #223144;
+  margin: 0 0.2em;
+  margin-top:0.5em;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: #fbab18;
+  color: #223144;
+}
+.tab-content {
+  padding: 2em 0;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-color: #e7e7e7;
+}
+.tab-content-table tr td:nth-of-type(1) {
+  font-weight: bold;
+}
+.tab-content-table tr td:nth-of-type(2) {
+  color: #57647c;
+}
+
+.bg-comment {
+  background-color: #fbab18;
+}
+/* ******************************************** */
+
+@media screen and (min-width: 768px) {
+     .product-detail .carousel img {
+          height: 450px;
+      
+        }
+}

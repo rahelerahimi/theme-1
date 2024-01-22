@@ -33,10 +33,7 @@ width: 100px;
   box-shadow: none;
   border-color: silver;
 }
-.form-check-input:checked {
-  background-color: #fbab18;
-  border-color: #fbab18;
-}
+
 .form-check-label {
   color: rgba(33, 37, 41, 0.75);
 }

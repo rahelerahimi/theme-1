@@ -17,32 +17,6 @@
   font-size: 1.2em;
 }
 
-hr {
-  opacity: 0.15;
-}
-.reply-comment .box-comment {
-  background-color: #fbab18;
-  border-radius: 0.5em;
-  padding: 1.7em;
-  margin: 1em 0;
-}
-.reply-comment .comment {
-  padding: 1.7em 0;
-}
-.reply-comment .reply {
-  cursor: pointer;
-}
-.comment-form {
-  margin-top: 3em;
-  margin-bottom: 5em;
-  padding: 0 0.5em;
-}
-.comment-form p:nth-of-type(1) {
-  font-family: 'IransansBold';
-  color: black;
-  margin: 1.5em 0;
-}
-
 /* ***************************************************** */
 @media screen and (min-width: 1200px) {
   .describe-project{
