@@ -30,8 +30,9 @@
 }
 .bill-details label,
 option {
-  color: rgb(104, 104, 104);
+  color: rgb(92, 92, 92);
 }
+
 .bill .table-bordered {
   border-color: #e6e8e9;
 }
@@ -39,12 +40,14 @@ option {
   padding-right: 0.7em;
   font-size: 0.9em;
 }
+
 .payment-box .form-check-label {
   color: black;
   margin-right: 2em;
   font-weight: bold;
 }
 .form-check-input:focus {
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: #fbab18;
 }
@@ -55,6 +58,7 @@ option {
   padding: 1.3em 1.5em;
   margin-top: 1em;
 }
+/* *********************************************************** */
 @media screen and (min-width: 577px) {
   .bill table tr td {
     padding-right: 1.5em;

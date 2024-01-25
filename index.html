@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/bootstrapicons.css">
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.css">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/scope.css">
 
@@ -17,10 +16,12 @@
 
 </head>
 
-<body class="demo1">
+<body id="home1">
+   <!-- -----------------------start back to top --------------------------->
   <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-chevron-up"></i></button>
-  <!-- ---------------------------to top btn---------------------------------- -->
+  <!-- ------------------------end back to top------------------------------>
   <header>
+  <!-- --------------------------start header top--------------------------->
     <div class="header-top">
 
       <div class="col-lg-6 text-right  d-flex">
@@ -48,7 +49,8 @@
         </ul>
       </div>
     </div>
-    <!-- ---------------------------end header top---------------------------------- -->
+    <!----------------------------end header top-------------------------------->
+    <!-- ------------------------start  menu desktop------------=---------------->
     <nav class="navbar navbar-expand-lg  nav-menu">
       <div class="container-fluid ">
         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
@@ -85,7 +87,7 @@
                   <li><a href="error.html">صفحه 404</a></li>
                   <li><a href="rejister.html">صفحه ورود</a></li>
                   <li><a href="">در دست ساخت</a></li>
-                  <li><a href="">قوانین و مقررات</a></li>
+                  <li><a href="conditions.html">قوانین و مقررات</a></li>
 
                 </ul>
               </div>
@@ -97,7 +99,18 @@
 
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="team.html"> فروشگاه</a>
+              <a class="nav-link" href="team.html"> فروشگاه
+                <i class="fa-solid fa-caret-down me-1"></i>
+              </a>
+              <div class="thubmenu">
+                <ul>
+               
+                  <li><a href="products.html">محصولات</a></li>
+                  <li><a href="product-detail.html">جزئیات محصول</a></li>
+                  <li><a href="basket.html">سبد خرید</a></li>
+                  <li><a href="bill.html">صورتحساب</a></li>
+                </ul>
+              </div>
             </li>
 
             <li class="nav-item">
@@ -118,8 +131,8 @@
       </div>
     </nav>
 
-    <!-- ---------------------------end menu desktop---------------------------------- -->
-
+    <!-- --------------------------end menu desktop-------------------------------- -->
+   <!-- --------------------------start menu response------------------------------ -->
     <nav class="navbar navbar-dark bg-transparent  nav-response  ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
@@ -186,10 +199,11 @@
       </div>
     </nav>
 
-    <!-- ---------------------------end menu response--------------------------------- -->
+    <!-- -----------------------end menu response-------------------------------->
 
   </header>
   <main>
+    <!-- ------------------------start carousel-------------------------------- -->
     <section>
       <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-head">
         <div class="carousel-inner">
@@ -216,7 +230,8 @@
         </button>
       </div>
     </section>
-    <!-- ---------------------------end carousel--------------------------------- -->
+    <!-- -------------------------end carousel-------------------------------- -->
+    <!-- ---------------------------start services----------------------------- -->
     <section class="level">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2  row-cols-lg-4  g-4 parent-card-services ">
@@ -264,7 +279,7 @@
       </div>
     </section>
     <!-- ---------------------------end services--------------------------------- -->
-
+  <!-- ---------------------------start  projects-------------------------------- -->
     <section class="level">
       <h3 class="title">آخرین پروژه ها</h3>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4  projects ">
@@ -338,6 +353,7 @@
 
     </section>
     <!-- ---------------------------end projects-------------------------------- -->
+    <!-- --------------------------start  banner-------------------------------- -->
     <section>
       <div class="banner">
         <div class="content-banner position-relative z-2  p-banner">
@@ -405,6 +421,7 @@
       </div>
     </section>
     <!-- ---------------------------end banner-------------------------------- -->
+    <!-- ---------------------------start blog-------------------------------- -->
     <section class=" blog level mb-5">
       <h3 class="title">آخرین وبلاگ و مطالب ما</h3>
       <div class="swiper swiper-container">
@@ -422,7 +439,7 @@
                 <a href="#">
                   <p class="title-blog ">لورم ایپسوم متن ساختگی با تولید سادگی </p>
                 </a>
-                <p class="caption-blog">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                <p class="caption-blog ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                   گرافیک است. چاپگرها و متون بلکه روزنامه و...</p>
               </div>
 
@@ -540,11 +557,11 @@
           </div>
 
 
-
         </div>
 
     </section>
     <!-- ---------------------------end blog-------------------------------- -->
+    <!-- ---------------------------start call us-------------------------------- -->
     <section class="Quote  ">
       <div>
         <p class="Quote-title ">مشاوره رایگان </p>
@@ -562,6 +579,7 @@
 
     </section>
     <!-- ---------------------------end call us-------------------------------- -->
+      <!-- ---------------------------start team-------------------------------- -->
     <section class="team level ">
       <h3 class="title">تیم ما</h3>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
@@ -676,7 +694,7 @@
       </div>
     </section>
     <!-- ---------------------------end team-------------------------------- -->
-
+ <!-- ---------------------------start about-------------------------------- -->
     <section class="banner about-section level">
       <div class="row  content-banner position-relative z-2  p-2">
         <div class=" col-xl-4   ">
@@ -695,6 +713,7 @@
       </div>
     </section>
     <!-- ---------------------------end about-------------------------------- -->
+   <!-- ---------------------------start Customers ------------------------------>
     <section class="Customers level ">
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col">
@@ -774,6 +793,7 @@
     </section>
     <!-- ---------------------------end Customers -------------------------------- -->
   </main>
+      <!-- ---------------------------start footer -------------------------------- -->
   <footer>
 
     <div class="footer d-flex flex-wrap   ">
@@ -863,7 +883,7 @@
       <p class="mt-3">© کلیه حقوق این قالب برای طراح محفوظ می باشد </p>
     </div>
   </footer>
-
+      <!-- ---------------------------end footer -------------------------------- -->
 </body>
 
 <script src="js/popper.min.js"></script>

@@ -4,6 +4,7 @@
 
 .project-details img {
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .project-details .img-big {
@@ -19,8 +20,8 @@
 
 /* ***************************************************** */
 @media screen and (min-width: 1200px) {
-  .describe-project{
-  padding-left: 1.5em;
-}
+  .describe-project {
+    padding-left: 1.5em;
+  }
 }
 /* x-large */

@@ -8,6 +8,8 @@
 }
 
 .callus-section ul {
+  -webkit-transform: translateX(2em);
+  -ms-transform: translateX(2em);
   transform: translateX(2em);
   overflow-x: hidden;
 }
@@ -16,15 +18,14 @@
   margin-top: 1.5em;
 }
 
-/* .callus-section form .form-control::placeholder {
-  color: rgb(170, 169, 169);
-} */
-/* *********************************************************************** */
+/* **************************************************************** */
 @media screen and (min-width: 1200px) {
   .callus-section .callus-caption {
     padding-left: 2em;
   }
   .callus-section ul {
+    -webkit-transform: translateX(2.3em);
+    -ms-transform: translateX(2.3em);
     transform: translateX(2.3em);
   }
 }

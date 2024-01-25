@@ -2,6 +2,8 @@
   padding-left: 0;
 }
 .sidebar ul {
+  -webkit-transform: translateX(1em);
+  -ms-transform: translateX(1em);
   transform: translateX(1em);
 }
 .sidebar-head {
@@ -13,6 +15,8 @@
 }
 .sidebar-category li:hover {
   color: #fbab18;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .sidebar-post img {
@@ -56,9 +60,13 @@
 }
 
 .entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 2em;
   margin-top: -1.5em;
+  -webkit-transform: translateX(2.4em);
+  -ms-transform: translateX(2.4em);
   transform: translateX(2.4em);
 }
 

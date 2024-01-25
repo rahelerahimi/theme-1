@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/style-basket.css" />
   </head>
 
-  <body>
+  <body id="basket">
+    <!-- -------------------------startback to top---------------------->
     <button onclick="topFunction()" id="myBtn">
       <i class="fa-solid fa-chevron-up"></i>
     </button>
-    <button onclick="topFunction()" id="myBtn">
-      <i class="fa-solid fa-chevron-up"></i>
-    </button>
+    <!--------------------------end back to top------------------------->
     <header>
+      <!-- --------------------------start header top---------------------->
       <div class="header-top">
         <div class="col-lg-6 text-right d-flex">
           <div style="margin-right: 0.5em">
@@ -51,7 +51,9 @@
           </ul>
         </div>
       </div>
-      <!-- ---------------------------end header top---------------------------------- -->
+      <!-- ---------------------------end header top--------------------------->
+
+      <!--------------------------start menu desktop-------------------------->
       <nav class="navbar navbar-expand-lg nav-menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
@@ -84,9 +86,11 @@
                     <li><a href="questions.html">سوالات متداول</a></li>
                     <li><a href="">نتیجه جستجو</a></li>
                     <li><a href="our-services.html">خدمات ما</a></li>
-                    <li><a href="team.html" class="active-thubmenu">تیم ما</a></li>
+                    <li>
+                      <a href="team.html" >تیم ما</a>
+                    </li>
                     <li><a href="projects.html">پروژه ها</a></li>
-                    <li><a href="project -details.html" >جزئیات پروژه</a></li>
+                    <li><a href="project -details.html">جزئیات پروژه</a></li>
                     <li><a href="error.html">صفحه 404</a></li>
                     <li><a href="">صفحه ورود</a></li>
                   </ul>
@@ -96,7 +100,18 @@
                 <a class="nav-link" href="#">وبلاگ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">فروشگاه </a>
+                <a class="nav-link" href="team.html"> فروشگاه
+                  <i class="fa-solid fa-caret-down me-1"></i>
+                </a>
+                <div class="thubmenu">
+                  <ul>
+                 
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="product-detail.html">جزئیات محصول</a></li>
+                    <li><a href="basket.html" class="active-thubmenu">سبد خرید</a></li>
+                    <li><a href="bill.html">صورتحساب</a></li>
+                  </ul>
+                </div>
               </li>
 
               <li class="nav-item">
@@ -124,8 +139,8 @@
         </div>
       </nav>
 
-      <!-- ---------------------------end menu desktop---------------------------------- -->
-
+      <!--------------------------end menu desktop------------------------->
+      <!-- -----------------------start menu response----------------------->
       <nav class="navbar navbar-dark bg-transparent nav-response">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
@@ -222,9 +237,10 @@
         </div>
       </nav>
 
-      <!-- ---------------------------end menu response--------------------------------- -->
+      <!----------------------------end menu response------------------------->
     </header>
     <main>
+      <!-------------------------startbanner top--------------------------->
       <section>
         <div class="banner-top">
           <figure class="position-relative">
@@ -232,117 +248,149 @@
             <div class="benertop-text">
               <p>سبد خرید</p>
               <div class="text-center">
-                <a href="index.html" >خانه</a
-                ><span class="bannertop-icon " 
+                <a href="index.html">خانه</a
+                ><span class="bannertop-icon"
                   ><i class="fa-solid fa-angle-left"></i></span
-                ><span class="bannertop-index" >سبد خرید</span>
+                ><span class="bannertop-index">سبد خرید</span>
               </div>
             </div>
           </figure>
         </div>
       </section>
 
-      <!-- ---------------------------end banner top---------------------------------- -->
+      <!-------------------------end banner top--------------------------->
+      <!-- ----------------------start basket------------------------>
       <section class="level basket">
-   
-<div class="table-responsive shadow rounded py-3 px-5 mt-5">
+        <div class="table-responsive shadow rounded py-3 px-5 mt-5">
+          <table class="table caption-top">
+            <thead>
+              <tr>
+                <th scope="col">محصول</th>
+                <th scope="col">نام محصول</th>
+                <th scope="col">قیمت واحد</th>
+                <th scope="col">تعداد محصول</th>
+                <th scope="col">مجموع قیمت</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="product-thumbnail">
+                  <a href=""
+                    ><figure><img src="images/p-1.jpg" alt="" /></figure
+                  ></a>
+                </td>
+                <td class="product-title"><a href="">محصول 1</a></td>
+                <td class="product-price2">230000 تومان</td>
+                <td>
+                  <div class="product-add">
+                    <button class="btn" id="increase">+</button>
+                    <span id="counter">0</span>
+                    <button class="btn" id="decrease">-</button>
+                  </div>
+                </td>
+                <td class="product-quantity">230000 تومان</td>
+                <td class="product-delete">
+                  <span><i class="fa-solid fa-trash"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-thumbnail">
+                  <a href=""
+                    ><figure><img src="images/p-1.jpg" alt="" /></figure
+                  ></a>
+                </td>
+                <td class="product-title"><a href="">محصول 2</a></td>
+                <td class="product-price2">200000 تومان</td>
+                <td>
+                  <div class="product-add">
+                    <button class="btn" id="increase">+</button>
+                    <span id="counter">0</span>
+                    <button class="btn" id="decrease">-</button>
+                  </div>
+                </td>
+                <td class="product-quantity">200000 تومان</td>
+                <td class="product-delete">
+                  <span><i class="fa-solid fa-trash"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-thumbnail">
+                  <a href=""
+                    ><figure><img src="images/p-1.jpg" alt="" /></figure
+                  ></a>
+                </td>
+                <td class="product-title"><a href="">محصول 3</a></td>
+                <td class="product-price2">250000 تومان</td>
+                <td>
+                  <div class="product-add">
+                    <button class="btn" id="increase">+</button>
+                    <span id="counter">0</span>
+                    <button class="btn" id="decrease">-</button>
+                  </div>
+                </td>
+                <td class="product-quantity">250000 تومان</td>
+                <td class="product-delete">
+                  <span><i class="fa-solid fa-trash"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-thumbnail">
+                  <a href=""
+                    ><figure><img src="images/p-1.jpg" alt="" /></figure
+                  ></a>
+                </td>
+                <td class="product-title"><a href="">محصول 4</a></td>
+                <td class="product-price2">270000 تومات</td>
+                <td>
+                  <div class="product-add">
+                    <button class="btn" id="increase">+</button>
+                    <span id="counter">0</span>
+                    <button class="btn" id="decrease">-</button>
+                  </div>
+                </td>
+                <td class="product-quantity">270000 تومات</td>
+                <td class="product-delete">
+                  <span><i class="fa-solid fa-trash"></i></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-             <table class="table  caption-top ">
-               
-               <thead>
-                 <tr>
-                   <th scope="col">محصول</th>
-                   <th scope="col">نام محصول</th>
-                   <th scope="col">قیمت واحد</th>
-                   <th scope="col">تعداد محصول</th>
-                   <th scope="col">مجموع قیمت</th>
-                   <th scope="col"></th>
-                 </tr>
-               </thead>
-               <tbody>
-                 <tr>
-                    <td class="product-thumbnail"><a href=""><figure><img src="images/p-1.jpg"  alt=""></figure></a></td>
-                    <td class="product-title"><a href="">محصول 1</a></td>
-                   <td class="product-price2">230000 تومان</td>
-                   <td> <div class="product-add">
-                    <button class="btn " id="increase">+</button>
-                    <span id="counter">0</span>
-                    <button  class="btn " id="decrease">-</button>
-                  </div></td>
-                  <td class="product-quantity">230000 تومان</td>
-                   <td class="product-delete"><span><i class="fa-solid fa-trash"></i></span></td>
-                 </tr>
-                 <tr>
-                    <td class="product-thumbnail"><a href=""><figure><img src="images/p-1.jpg"  alt=""></figure></a></td>
-                   <td class="product-title"><a href="">محصول 2</a></td>
-                   <td class="product-price2">200000 تومان</td>
-                   <td> <div class="product-add">
-                    <button class="btn " id="increase">+</button>
-                    <span id="counter">0</span>
-                    <button  class="btn " id="decrease">-</button>
-                  </div></td>
-                  <td class="product-quantity">200000 تومان</td>
-                   <td class="product-delete"><span><i class="fa-solid fa-trash"></i></span></td>
-                  
-                 </tr>
-                 <tr>
-                    <td class="product-thumbnail"><a href=""><figure><img src="images/p-1.jpg"  alt=""></figure></a></td>
-                    <td class="product-title"><a href="">محصول 3</a></td>
-                   <td class="product-price2">250000 تومان</td>
-                   <td> <div class="product-add">
-                    <button class="btn " id="increase">+</button>
-                    <span id="counter">0</span>
-                    <button  class="btn " id="decrease">-</button>
-                  </div></td>
-                  <td class="product-quantity">250000 تومان</td>
-                   <td class="product-delete"><span><i class="fa-solid fa-trash"></i></span></td>
-                 </tr>
-                 <tr>
-                    <td class="product-thumbnail"><a href=""><figure><img src="images/p-1.jpg"  alt=""></figure></a></td>
-                    <td class="product-title"><a href="">محصول 4</a></td>
-                   <td class="product-price2">270000 تومات</td>
-                   <td> <div class="product-add ">
-                    <button class="btn " id="increase">+</button>
-                    <span id="counter">0</span>
-                    <button  class="btn " id="decrease">-</button>
-                  </div></td>
-                  <td class="product-quantity">270000 تومات</td>
-                   <td class="product-delete"><span><i class="fa-solid fa-trash"></i></span></td>
-                 </tr>
-               </tbody>
-             </table>
-
-             <div class="d-flex justify-content-between flex-wrap mt-4 mb-3">
-             <div class="d-flex flex-wrap mt-1">
+          <div class="d-flex justify-content-between flex-wrap mt-4 mb-3">
+            <div class="d-flex flex-wrap mt-1">
               <form action="">
-               <div class="mb-3">
-               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="کد تخفیف">
-             </div>
-            </form>
-             <button class=" btn-color">اعمال</button>
-          </div>  
-               <button class=" btn-color mt-1 update-basket">بروز رسانی سبد </button>
-             </div>
-     
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="کد تخفیف"
+                  />
+                </div>
+              </form>
+              <button class="btn-color">اعمال</button>
+            </div>
+            <button class="btn-color mt-1 update-basket">بروز رسانی سبد</button>
           </div>
+        </div>
+  
 
-
-           <div class="col-12 col-lg-6 shadow rounded py-3  cart-total">
-               <p class="pt-3">مجموع سبد خرید</p>
-               <ul>
-                    <li ><span>زیر مجموعه خرید</span><span>200000 تومان</span></li>
-                    <li><span>هزینه حمل و نقل</span><span>50000 تومان</span></li>
-                    <li><span>تخفیف</span><span>20000 تومان</span></li>
-                    <li><span>مجموع خرید</span><span>300000 تومان</span></li>
-               </ul>
-              <a href=""><button class="btn-color ">ادامه خرید</button></a> 
-        
-       
-             </div>
+        <div class="col-12 col-lg-6 shadow rounded py-3 cart-total">
+          <p class="pt-3">مجموع سبد خرید</p>
+          <ul>
+            <li><span>زیر مجموعه خرید</span><span>200000 تومان</span></li>
+            <li><span>هزینه حمل و نقل</span><span>50000 تومان</span></li>
+            <li><span>تخفیف</span><span>20000 تومان</span></li>
+            <li><span>مجموع خرید</span><span>300000 تومان</span></li>
+          </ul>
+          <a href=""><button class="btn-color">ادامه خرید</button></a>
+        </div>
 
       </section>
+      <!-- ----------------------end basket------------------------>
     </main>
-       <!-- ---------------------------end basket---------------------------------- -->
+    <!-- ----------------------start footer------------------------>
     <footer>
       <div class="footer d-flex flex-wrap">
         <div class="col-xl-3 col-lg-12 col-12">
@@ -439,10 +487,10 @@
         <p class="mt-3">© کلیه حقوق این قالب برای طراح محفوظ می باشد</p>
       </div>
     </footer>
+    <!-- ----------------------end footer------------------------>
   </body>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/all.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/javaScript.js"></script>
 </html>

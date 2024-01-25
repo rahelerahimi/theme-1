@@ -1,0 +1,90 @@
+.coming-soon {
+  background-image: url('../images/rejister.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.coming-soon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.comingsoon-content {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.comingsoon-content .title-comingsoon {
+  color: white;
+  font-family: 'IransansBold';
+  font-size: 2.1em;
+}
+.comingsoon-content .text-comingsoon {
+  color: white;
+  font-size: 0.9em;
+  width: 80%;
+  margin: 0.5em auto;
+}
+.comingsoon-content .timer {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.comingsoon-content div {
+  margin: 0.5em;
+}
+.comingsoon-content .timer p:nth-of-type(1) {
+  font-size: 2em;
+  font-weight: bold;
+  width: 50px;
+}
+.social a {
+  color: #f1a005;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #f1a005;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.social a:hover {
+  color: white;
+  background-color: #f1a005;
+}
+/* ********************************************** */
+@media screen and (min-width: 577px) {
+  .comingsoon-content .title-comingsoon {
+    font-size: 2.7em;
+  }
+  .comingsoon-content .text-comingsoon {
+    font-size: 1em;
+    width: 100%;
+  }
+  .comingsoon-content div {
+    margin: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comingsoon-content .title-comingsoon {
+    font-size: 3em;
+  }
+}

@@ -36,20 +36,26 @@
 /* tablet */
 @media screen and (min-width: 992px) {
   .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .nav-response {
     margin-top: 3.6em;
   }
   .nav-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-     margin-left: 4em;
+    margin-left: 4em;
   }
   .nav-menu li {
     margin-left: 0.2em;
   }
 
   .form-nav-desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .nav-response {
@@ -73,7 +79,7 @@
 /* desktop */
 @media screen and (min-width: 1200px) {
   .nav-menu ul {
-     margin-left: 8em;
+    margin-left: 8em;
   }
   .about-section img {
     display: block;

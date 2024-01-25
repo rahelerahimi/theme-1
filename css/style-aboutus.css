@@ -1,5 +1,5 @@
 .about-1 {
-  padding:1em 0 3.7em 0;
+  padding: 1em 0 3.7em 0;
 }
 
 .about-1 p:nth-of-type(2) {
@@ -8,7 +8,8 @@
 }
 
 .about-1 figure {
-  box-shadow: -4px -4px 2px #f7b741,4px 4px 2px #f7b741;
+  -webkit-box-shadow: -4px -4px 2px #f7b741, 4px 4px 2px #f7b741;
+  box-shadow: -4px -4px 2px #f7b741, 4px 4px 2px #f7b741;
   padding: 0.4em;
   display: none;
 }
@@ -16,6 +17,7 @@
 .about-1 figure img {
   width: 100%;
   height: 310px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -29,8 +31,14 @@
   width: 70px;
   height: 70px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -44,14 +52,12 @@
   color: rgb(97, 97, 97);
 }
 
-/* **************************************end about-service************************************ */
+/* **************************************end our features************************************ */
 @media screen and (min-width: 992px) {
-
-.about-1 p:nth-of-type(2){
-     padding-left:3em;
-    
-}
-.about-1 figure{ 
-     display:block;
- }
+  .about-1 p:nth-of-type(2) {
+    padding-left: 3em;
+  }
+  .about-1 figure {
+    display: block;
+  }
 }
