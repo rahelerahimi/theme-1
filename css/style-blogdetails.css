@@ -80,23 +80,6 @@
   margin-right: 0.2em;
 }
 
-.text-boxblog {
-  background-color: rgb(236, 236, 236);
-  padding: 1.7em;
-  margin: 1em 0;
-  position: relative;
-}
-
-.text-boxblog::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 5px;
-  height: 100%;
-  background-color: #fbab18;
-}
-
 hr {
   opacity: 0.15;
 }

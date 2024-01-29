@@ -82,15 +82,18 @@ a {
 #exampleFormControlTextarea1 {
   height: auto !important;
 }
+
 .form-select:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-color: silver;
 }
+
 .form-check-input:checked {
   background-color: #fbab18;
   border-color: #fbab18;
 }
+
 .list-icon {
   color: #082044;
   background-color: #fbab18;
@@ -120,7 +123,22 @@ a {
   margin-right: 2em;
   color: rgb(99, 98, 98);
 }
+.text-boxblog {
+  background-color: rgb(236, 236, 236);
+  padding: 1.7em;
+  margin: 1em 0;
+  position: relative;
+}
 
+.text-boxblog::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #fbab18;
+}
 .pagination li {
   margin: 0 0.2em;
 }
@@ -134,17 +152,20 @@ a {
   color: white;
   background-color: #082044;
 }
+
 .page-item.active a.page-link {
   background-color: #082044;
   border-color: #082044;
   color: white;
 }
+
 .page-link:focus {
   color: white !important;
   background-color: #082044;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 .product-add .btn,
 .product-add span {
   width: 40px;
@@ -155,12 +176,14 @@ a {
 .product-add .btn {
   background-color: rgb(233, 233, 233);
 }
+
 .product-add span {
   color: #223144;
   font-weight: bold;
   text-align: center;
   display: inline-block;
 }
+
 /* **************************************Common css************************************ */
 .banner-top figure {
   position: relative;
@@ -201,6 +224,7 @@ a {
   font-weight: bold;
   font-size: 1.7em;
 }
+
 .banner-top a {
   color: white;
 }
@@ -256,6 +280,7 @@ a {
   padding: 0 2em;
   width: 100%;
 }
+
 .icon-right-headertop {
   color: #fbab18;
 }
@@ -297,7 +322,7 @@ a {
 
 .nav-menu ul {
   display: none;
-  margin-left: 15% !important;
+  margin-left: 5% !important;
 }
 
 .nav-menu li {
@@ -321,12 +346,8 @@ a {
   z-index: 4;
 }
 
-.nav-menu .nav-item:hover ul {
-  opacity: 1;
-  visibility: visible;
-}
-
-.nav-menu .thubmenu ul {
+.nav-menu .thubmenu .dropdown1,
+.nav-menu .thubmenu .dropdown2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,11 +361,8 @@ a {
   min-width: 160px;
   text-align: right;
   position: absolute;
-  top: 13px;
-  left: -55px;
   padding: 0.8em 1em;
   border-bottom: 5px solid #fbab18;
-  border-radius: 8px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.4s;
@@ -352,9 +370,33 @@ a {
   transition: 0.4s;
 }
 
+.nav-menu .thubmenu .dropdown1 {
+  top: 10px;
+  right: -10px;
+}
+
+.nav-menu .thubmenu .dropdown2 {
+  top: -30px;
+  right: 144px;
+}
+
+.nav-menu .nav-item:hover .dropdown1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-menu .thubmenu .dropdown1 li:hover .dropdown2 {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav-menu .thubmenu ul li {
   width: 100%;
   margin: 0.4em 0;
+}
+
+.nav-menu .nav-link:focus {
+  color: white !important;
 }
 
 .nav-menu .thubmenu ul li a {
@@ -416,6 +458,7 @@ a {
 .nav-response {
   margin-top: 0.7em;
   margin-left: 2em;
+
 }
 
 .nav-response li {
@@ -445,6 +488,11 @@ a {
   width: 270px;
 }
 
+.offcanvas-body li a {
+  color: rgb(104, 104, 104);
+  font-size: 0.9em;
+}
+
 .btn-close {
   color: black;
   margin-right: 87% !important;
@@ -456,22 +504,36 @@ a {
   box-shadow: none;
 }
 
+.nav-response .dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
 .dropdown-menu {
   text-align: right;
   border: none;
 }
 
 .dropdown-menu li a {
-  font-size: 0.9em;
   margin-top: 0.5em;
 }
 
-.nav-link:focus {
-  color: black !important;
+.nav-response .nav-link:focus {
+  color: rgb(104, 104, 104) !important;
 }
 
 .dropdown-item:hover {
   background-color: transparent;
+}
+
+.dropdown-toggle::after {
+  display: none;
+
 }
 
 /* **************************************end menu response************************************ */
@@ -580,6 +642,7 @@ a {
     transform: translateY(0);
   }
 }
+
 @keyframes fadeIcon {
   from {
     opacity: 0;
@@ -608,6 +671,7 @@ a {
   -o-transition: 0.8s;
   transition: 0.8s;
 }
+
 .projects a:hover::after {
   width: 90%;
 }
