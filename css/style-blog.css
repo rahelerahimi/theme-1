@@ -1,8 +1,8 @@
-.blog-list {
+.blog-grid{
   margin-top: 5em;
 }
 
-.blog-list .card {
+.blog-grid .card {
   -webkit-box-shadow: 0 0 5px silver;
   box-shadow: 0 0 5px silver;
   border-radius: 1em;
@@ -11,18 +11,18 @@
   font-size: 0.9em !important;
 }
 
-.blog-list .card:hover .img-blog {
+.blog-grid .card:hover .img-blog {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-.blog-list .title-blog {
+.blog-grid .title-blog {
   margin-top: -1em;
 }
 
-.blog-list .title-blog,
-.blog-list .caption-blog,
-.blog-list .date-blog {
+.blog-grid .title-blog,
+.blog-grid .caption-blog,
+.blog-grid .date-blog {
   font-size: 1em !important;
 }
 /* *********************************************************** */

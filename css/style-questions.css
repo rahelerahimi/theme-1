@@ -1,15 +1,18 @@
 .questions-accordion {
   margin-top: 4em;
 }
+
 .questions-accordion img {
   width: 90%;
   height: 490px;
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 .questions-accordion .title-Customers {
   margin-left: 0;
 }
+
 .accordion-1 {
   background-color: #223144;
   color: #ffffff;
@@ -26,10 +29,12 @@
   border-bottom: 1px solid white;
   position: relative;
 }
+
 .active,
 .accordion-1:hover {
   background-color: #223144;
 }
+
 .accordion-1:after {
   content: '\002B';
   position: absolute;
@@ -39,9 +44,11 @@
   float: right;
   margin: 0 0.5em;
 }
+
 .active:after {
   content: '\2212';
 }
+
 .panel {
   padding: 0 1.2em;
   background-color: rgb(236, 233, 233);
@@ -51,7 +58,18 @@
   -o-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out;
 }
+
 .panel p {
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+/* ********************************* */
+.form-select {
+  height: 48px;
+  color: #5e5e5e;
+}
+
+.form-select:focus {
+  border-color: #e2e2e2;
 }

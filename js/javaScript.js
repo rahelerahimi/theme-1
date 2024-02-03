@@ -40,6 +40,69 @@ function animateCounter (elementId, targetValue) {
 }
 // --------------------------------counter up------------------------------------------
 
+
+// var pageElements = document.querySelectorAll('#home1,#home2');
+
+// for (var i = 0; i < pageElements.length; i++) {
+
+//   var pageElement = pageElements[i];
+
+//   if (pageElement.contains(pageElement.querySelector('.swiper-container'))) {
+
+//     var swiper = new Swiper(pageElement.querySelector('.swiper-container'), {
+
+//       spaceBetween: 10,
+
+//       autoplay: {
+
+//         delay: 5000
+
+//       },
+
+//       pagination: {
+
+//         el: pageElement.querySelector('.swiper-pagination'),
+
+//         clickable: true
+
+//       },
+
+//       breakpoints: {
+
+//         320: {
+
+//           slidesPerView: 1,
+
+//           spaceBetween: 20
+
+//         },
+
+//         640: {
+
+//           slidesPerView: 2,
+
+//           spaceBetween: 30
+
+//         },
+
+//         992: {
+
+//           slidesPerView: 3,
+
+//           spaceBetween: 30
+
+//         }
+
+//       }
+
+//     });
+
+//   }
+
+// }
+
+
+
 var pageElement = document.querySelector('#home1') 
 if (
   pageElement &&
