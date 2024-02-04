@@ -25,6 +25,7 @@
 
 .about-service span {
   color: #f7b741;
+  font-weight: bold;
   background-color: #03192b;
   font-size: 2em;
   border-radius: 50%;
@@ -45,6 +46,7 @@
 .about-service .card-title {
   font-weight: bold;
   margin-top: 1em;
+  color:black;
 }
 
 .about-service .card-text {
