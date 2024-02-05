@@ -16,7 +16,7 @@ function topFunction () {
 //  ---------------------------------to top--------------------------------------------
 
 document.addEventListener('DOMContentLoaded', function () {
-  var pageElement = document.querySelector('#home1,#about-us')
+  var pageElement = document.querySelector('#home1,#home4,#about-us')
   if (pageElement) {
     animateCounter('customersCounter', 80)
     animateCounter('projectsCounter', 200)
