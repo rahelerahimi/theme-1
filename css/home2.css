@@ -1,17 +1,24 @@
+.homepage-02 .text-ourservices {
+  color: #192735;
+  font-weight: bold;
+}
+
 .homepage-02 .parent-card-services {
   margin-top: 3em;
 }
 .homepage-02 .projects-home-2 {
-  background-color: #061935;
-  padding-top: 1em;
-  padding-bottom: 5em;
-  margin: 5em 0;
+  margin: 7em 0;
 }
 
 .homepage-02 .projects .card:hover::after {
   background-color: #0f2233bd;
 }
-
+.homepage-02  .banner {
+  margin: 6em 0;
+}
+.homepage-02 .p-banner {
+  padding: 4em 2.5em 5em 2em;
+}
 .homepage-02 .about ul {
   -webkit-transform: translateX(2.5em);
   -ms-transform: translateX(2.5em);
@@ -20,15 +27,43 @@
 
 .homepage-02 .about ul li {
   margin-top: 0.5em;
+  color: #192735;
+  width: 100%;
 }
 
 .homepage-02 .about ul span:nth-of-type(1) {
   color: #f1a005;
   margin-left: 0.5em;
 }
-
-.homepage-02 .about img {
-  height: 330px;
+.homepage-02 .about figure {
+  width: 90%;
+}
+.homepage-02 .about figure::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #2a4359;
+  z-index: -1;
 }
 
-
+.homepage-02 .about img {
+  width: 100%;
+  height: 330px;
+  border-radius: 1em;
+}
+.homepage-02 .Customers {
+margin: 7.5em 0 0 0;
+}
+.homepage-02 .blog {
+  margin: 7em 0 0 0;
+}
+/* **************************************** */
+@media screen and (min-width: 992px) {
+  .homepage-02 .about figure {
+    margin-right: 2em;
+  }
+}

@@ -1,5 +1,5 @@
 .homepage-03 header {
-  background-color: #082044;
+background-color: #2a4359;
 }
 
 .homepage-03 .header-top {
@@ -16,8 +16,9 @@
 
 .homepage-03 .feature-box {
   background-color: white;
+  -webkit-box-shadow: 0 0 10px rgb(165, 165, 165);
   box-shadow: 0 0 10px rgb(165, 165, 165);
-  border-radius: 8px;
+  border-radius:1em;
   padding: 2em 3em;
   margin-top: -2em;
   margin-bottom: 5em;
@@ -38,13 +39,38 @@
 .homepage-03 .feature-box .col p {
   margin-top: 1em;
   font-size: 0.9em;
-  color: black;
+  color:#192735;
+  font-weight: bold;
 }
+.homepage-03 .services-2  {
+margin-top:7em;
+  }
+.homepage-03 .services-2 .card {
+padding:0.5em;
+background-color:#f2f2f2;
+}
+/* repeat with homepage-02 */
+.homepage-03 .services-2 figure{
 
+  width: 90%;
+ 
+}
+.homepage-03 .services-2 figure::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #223144;
+  z-index: -1;
+}
+/* repeat */
 .homepage-03 .services-2 img {
   width: 100%;
-  height: 370px;
-  border-radius: 8px;
+  height: 400px;
+  border-radius: 1em;
 }
 
 .homepage-03 .services-2 .icon-services {
@@ -61,14 +87,28 @@
 }
 
 .homepage-03 .bg-banner {
-  background-color: #031e35;
+  background-color: #2a4359;
   margin: 4em 0;
 }
-
-.homepage-03 .Quote{
-  margin-top:3em;
+.homepage-03 .blog-grid .card {
+  background-color: #ffffff;
 }
-.homepage-03 footer{
+
+.homepage-03 .blog-grid .date-blog {
+  color: #8b8a8a;
+}
+
+.homepage-03 .blog-grid .title-blog {
+  color: #f1a005;
+}
+.homepage-03 .blog-grid .caption-blog {
+  color: #020202;
+}
+
+.homepage-03 .Quote {
+  margin-top: 3em;
+}
+.homepage-03 footer {
   margin-top: -5em;
 }
 
@@ -86,6 +126,8 @@
 
   .homepage-03 .nav-menu ul {
     margin-left: -0.7em !important;
+    -webkit-transform: translateX(4em) !important;
+    -ms-transform: translateX(4em) !important;
     transform: translateX(4em) !important;
   }
 
@@ -100,11 +142,16 @@
   .homepage-03 .nav-menu .thubmenu .dropdown2 {
     right: 13em !important;
   }
+  .homepage-03 .services-2 figure {
+    margin-right:1.3em;
+  }
 }
-
+/* ************************************************* */
 @media screen and (min-width: 1200px) {
   .homepage-03 .nav-menu ul {
     margin-left: 8em !important;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
   }
 }

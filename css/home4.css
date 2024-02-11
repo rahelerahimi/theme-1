@@ -64,6 +64,26 @@
 .homepage-04 .services .card .card-title {
   font-size: 1.1em;
 }
+.homepage-04 .blog-grid .card {
+  background-color: #ffffff;
+
+}
+
+
+.homepage-04 .blog-grid .date-blog {
+  color: #8b8a8a;
+
+}
+
+.homepage-04 .blog-grid .title-blog {
+
+
+  color: #f1a005;
+
+}
+.homepage-04  .blog-grid .caption-blog{
+  color: #020202;
+}
 .homepage-04 .Quote {
   margin-top: 3em;
 }

@@ -81,7 +81,9 @@
   .carousel-head img {
     height: 600px;
   }
-
+  .parent-services {
+  padding: 3em 3em 1em 3em;
+}
   .footer .list-footer-right ul,
   .footer .list-footer-left ul {
     width: auto;
