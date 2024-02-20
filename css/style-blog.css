@@ -5,10 +5,11 @@
 .blog-grid .card {
   -webkit-box-shadow: 0 0 5px silver;
   box-shadow: 0 0 5px silver;
+  background-color: #2a4359;
   border-radius: 1em;
   margin-top: 2em;
   text-align: right;
-  font-size: 0.9em !important;
+  font-size: 1em !important;
 }
 
 .blog-grid .card:hover .img-blog {

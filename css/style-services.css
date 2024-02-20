@@ -6,8 +6,9 @@
 }
 /* ******************************* */
 .banner-service {
-  background-color: #223144;
+  background-color: #2a4359;
   color: white;
+
 }
 .banner-service P:nth-of-type(2) {
   font-family: 'IransansBold';
@@ -22,20 +23,45 @@
 /* ******************************************** */
 .services-caption {
   margin-top: 6em;
+  margin-bottom: 6.5em;
 }
 .services-caption .title-Customers {
   margin-left: 0;
   font-size: 1.1em;
 }
+.services-caption p:nth-of-type(1) {
+font-weight: bold;
+color: #192735;
+}
 .services-caption p:nth-of-type(2) {
   text-align: justify;
 }
+.services-caption figure {
+width: 90%;
+position: relative;
+display: none;
+
+}
+.services-caption figure::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #2a4359;
+  z-index: -1;
+}
 .services-caption img {
   height: 400px;
+  width: 100%;
+  border-radius: 1em;
 }
 /* ****************************************************** */
+
 .bg-services {
-  background-image: url('../images/rejister.jpg');
+  background-image: url('../images/h-06.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -50,7 +76,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.356);
+  background-color: #2a4359b0;
 }
 
 .bg-services .title {
@@ -58,6 +84,13 @@
 }
 
 /* ********************************************* */
+@media screen and (min-width: 577px) {
+  .services-caption figure {
+
+display:block;
+
+}
+}
 @media screen and (min-width: 768px) {
   .services-caption .title-Customers {
     margin-left: 3em;
@@ -69,5 +102,15 @@
   .banner-service P:nth-of-type(3) {
     width: 50%;
   }
+  .services-caption figure {
+
+margin-right:1em;
+}
 }
 /* tablet */
+@media screen and (min-width:1200px) {
+  .services-caption figure {
+
+margin-right: 2em;
+}
+}

@@ -1,7 +1,8 @@
 .rejister {
-  background-image: url('../images/rejister.jpg');
+  background-image: url('../images/h-27.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
   position: relative;
@@ -20,7 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.658);
+  background-color: #2a4359a9;
   width: 100%;
   height: 100%;
 }
@@ -35,6 +36,7 @@
 .rejister-content img {
   width: 100px;
 }
+
 .form-check-input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -42,6 +44,10 @@
 }
 .form-check-label {
   color: rgba(33, 37, 41, 0.75);
+}
+
+.rejister a{
+  color: #335574;
 }
 .link-forget {
   color: rgba(33, 37, 41, 0.75);

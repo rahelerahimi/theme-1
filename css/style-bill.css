@@ -22,9 +22,7 @@
   font-size: 1.1em;
   margin: 1em 0;
 }
-.bill-details {
-  padding-left: 2.5em;
-}
+
 .bill-details .form-check-label {
   margin-right: 2em;
 }
@@ -32,7 +30,9 @@
 option {
   color: rgb(92, 92, 92);
 }
-
+.bill .table{
+  --bs-table-bg:#f2f2f2!important;
+}
 .bill .table-bordered {
   border-color: #e6e8e9;
 }
@@ -53,6 +53,7 @@ option {
 }
 .payment-box p {
   background-color: #ececec;
+  border-radius: 8px;
   color: #8e8d8d;
   text-align: justify;
   padding: 1.3em 1.5em;

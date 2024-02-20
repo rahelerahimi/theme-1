@@ -149,6 +149,7 @@ a {
 }
 .pagination li {
   margin: 0 0.2em;
+  border-radius: 3px !important;
 }
 
 .pagination li a {
@@ -158,18 +159,18 @@ a {
 
 .pagination li a:hover {
   color: white;
-  background-color: #082044;
+  background-color: #2a4359;
 }
 
 .page-item.active a.page-link {
-  background-color: #082044;
-  border-color: #082044;
+  background-color: #2a4359;
+  border-color: #2a4359;
   color: white;
 }
 
 .page-link:focus {
   color: white !important;
-  background-color: #082044;
+  background-color: #2a4359;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -205,12 +206,14 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.705);
+  background-color: #041c3f7c;
 }
 
 .banner-top figure img {
   width: 100%;
-  height: 250px;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .banner-top .benertop-text {
@@ -268,7 +271,7 @@ a {
 }
 
 #myBtn:hover {
-  background-color: #2a4359;
+  background-color: #223144;
 }
 
 /* **************************************back to top************************************ */
@@ -599,7 +602,7 @@ a {
 
 /* **************************************end carousel************************************ */
 .services-top {
-  margin-top: -6.5em;
+  margin-top: -3em;
   margin-bottom:6em;
   position: relative;
   z-index: 2;
@@ -610,12 +613,19 @@ a {
 .services-top .card {
   background-color: #2a4359;
   color: white;
-  border-radius: 1em;
-  padding: 2.5em 2em;
+  border-radius:1em;
+  padding: 2.5em 1em;
 }
+
+.services-borderbottom{
+  border-bottom:10px solid #fbab18;
+}
+
+
 .services-top .services-center {
   background-color: #fbab18;
 }
+
 .services-top .services-center .icon-services {
   color: #2a4359;
 }
@@ -735,7 +745,13 @@ a {
 .p-banner {
   padding: 4em 2.5em 7em 2em;
 }
-
+.banner h2 {
+  color: #f1a005;
+  font-weight: bold;
+}
+.banner span {
+  color: #f1a005;
+}
 .banner .card {
   border: 1px dashed white;
   border-radius: 1em;
@@ -1040,7 +1056,6 @@ a {
 }
 
 .Customers-logo figure {
-  overflow: hidden;
   width: 100%;
 }
 
@@ -1090,7 +1105,7 @@ a {
 
 /* **************************************end Customers************************************ */
  .blog{
-  margin-top: 7em;
+  margin-top: 6em;
  }
  .homepage-01 .swiper{
   margin-top: 1em;
@@ -1222,7 +1237,7 @@ a {
 }
 .footer {
   background-color: #223b52;
-  padding: 3.5em 4em;
+  padding: 5em 4em 4em 4em;
   color: rgb(145, 145, 145);
   font-size: 1em;
   margin-top: 4em;

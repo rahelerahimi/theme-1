@@ -40,107 +40,137 @@ function animateCounter (elementId, targetValue) {
 }
 // --------------------------------counter up------------------------------------------
 
+var pages = ['home1', 'home2', 'home3','home4']
 
-// var pageElements = document.querySelectorAll('#home1,#home2');
-
-// for (var i = 0; i < pageElements.length; i++) {
-
-//   var pageElement = pageElements[i];
-
-//   if (pageElement.contains(pageElement.querySelector('.swiper-container'))) {
-
-//     var swiper = new Swiper(pageElement.querySelector('.swiper-container'), {
-
-//       spaceBetween: 10,
-
-//       autoplay: {
-
-//         delay: 5000
-
-//       },
-
-//       pagination: {
-
-//         el: pageElement.querySelector('.swiper-pagination'),
-
-//         clickable: true
-
-//       },
-
-//       breakpoints: {
-
-//         320: {
-
-//           slidesPerView: 1,
-
-//           spaceBetween: 20
-
-//         },
-
-//         640: {
-
-//           slidesPerView: 2,
-
-//           spaceBetween: 30
-
-//         },
-
-//         992: {
-
-//           slidesPerView: 3,
-
-//           spaceBetween: 30
-
-//         }
-
-//       }
-
-//     });
-
-//   }
-
-// }
-
-
-
-var pageElement = document.querySelector('#home1') 
-if (
-  pageElement &&
-  pageElement.contains(document.querySelector('.swiper-container'))
-) {
-  var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 10,
-    autoplay: {
-      delay: 5000
-    },
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 30
-      },
-
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      }
-    }
-  })
+// برای هر نام صفحه در آرایه
+for (var i = 0; i < pages.length; i++) {
+  var pageName = pages[i]
+  // انتخاب عنصر صفحه با استفاده از نام صفحه
+  var pageElement = document.querySelector('#' + pageName)
+  // اگر عنصر صفحه موجود بود
+  if (pageElement) {
+    // یافتن همه عناصر .swiper-container در صفحه
+    var swiperElements = pageElement.querySelectorAll('.swiper-container')
+    // برای هر عنصر .swiper-container در صفحه
+    swiperElements.forEach(function (swiperElement) {
+      // ایجاد یک نمونه از Swiper برای عنصر .swiper-container موجود در صفحه
+      var swiper = new Swiper(swiperElement, {
+        spaceBetween: 10,
+        autoplay: {
+          delay: 5000
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }
+      })
+    })
+  }
 }
-//  ---------------------------------carousel swiper-------------------------------------------
 
+// -----------------------------------swiper slider1-----------------------------------
+var pages = ['home2','home3','home4']
+
+// برای هر نام صفحه در آرایه
+for (var i = 0; i < pages.length; i++) {
+  var pageName = pages[i]
+  // انتخاب عنصر صفحه با استفاده از نام صفحه
+  var pageElement = document.querySelector('#' + pageName)
+  // اگر عنصر صفحه موجود بود
+  if (pageElement) {
+    // یافتن همه عناصر .swiper-container در صفحه
+    var swiperElements = pageElement.querySelectorAll('.swiper-container-2')
+    // برای هر عنصر .swiper-container در صفحه
+    swiperElements.forEach(function (swiperElement) {
+      // ایجاد یک نمونه از Swiper برای عنصر .swiper-container موجود در صفحه
+      var swiper = new Swiper(swiperElement, {
+        spaceBetween: 10,
+        autoplay: {
+          delay: 5000
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }
+      })
+    })
+  }
+}
+
+//  --------------------------------- swiper slider2-------------------------------------------
+
+var pages = ['home4']
+
+// برای هر نام صفحه در آرایه
+for (var i = 0; i < pages.length; i++) {
+  var pageName = pages[i]
+  // انتخاب عنصر صفحه با استفاده از نام صفحه
+  var pageElement = document.querySelector('#' + pageName)
+  // اگر عنصر صفحه موجود بود
+  if (pageElement) {
+    // یافتن همه عناصر .swiper-container در صفحه
+    var swiperElements = pageElement.querySelectorAll('.swiper-container-3')
+    // برای هر عنصر .swiper-container در صفحه
+    swiperElements.forEach(function (swiperElement) {
+      // ایجاد یک نمونه از Swiper برای عنصر .swiper-container موجود در صفحه
+      var swiper = new Swiper(swiperElement, {
+        spaceBetween: 10,
+        autoplay: {
+          delay: 5000
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          }
+        }
+      })
+    })
+  }
+}
+//  --------------------------------- swiper slider3-------------------------------------------
 document.addEventListener('DOMContentLoaded', function () {
-  var pageElement = document.querySelector('#questions') 
+  var pageElement = document.querySelector('#questions')
 
   if (pageElement) {
     var acc = document.getElementsByClassName('accordion-1')
@@ -163,8 +193,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 // ---------------------------------accordeon-------------------------------------------
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var pageElement = document.querySelector('#product-detail')
@@ -208,9 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-
 // --------------------------------product add------------------------------------------
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var pageElement = document.querySelector('#basket') // تغییر به کلاس یا شناسه عنصری که برای صفحه استفاده می کنید

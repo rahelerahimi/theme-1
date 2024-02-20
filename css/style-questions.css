@@ -1,10 +1,27 @@
 .questions-accordion {
-  margin-top: 4em;
+  margin-top: 6em;
+  margin-bottom:6em;
 }
-
+.questions-accordion figure {
+  width: 100%;
+  position: relative;
+  margin-right:1.5em;
+}
+.questions-accordion figure::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  right: -25px;
+  width:90%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #223144;
+  z-index: -1
+}
 .questions-accordion img {
   width: 90%;
   height: 490px;
+  border-radius: 1em;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -15,6 +32,7 @@
 
 .accordion-1 {
   background-color: #223144;
+  border-radius:8px;
   color: #ffffff;
   cursor: pointer;
   padding: 1.2em 1.6em;
@@ -26,7 +44,7 @@
   -o-transition: 0.3s;
   transition: 0.3s;
   text-align: right;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   position: relative;
 }
 
@@ -51,6 +69,8 @@
 
 .panel {
   padding: 0 1.2em;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius:8px;
   background-color: rgb(236, 233, 233);
   max-height: 0;
   overflow: hidden;

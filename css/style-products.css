@@ -1,9 +1,14 @@
+.parent-products{
+margin-top:5em;
+}
 .form-select {
   width: 200px;
 }
 .products .card {
   overflow: hidden;
   margin-top: 1em;
+  border-radius: 1em;
+  border-bottom: 7px solid #2a4359;
   -webkit-box-shadow: 0 0 7px silver;
   box-shadow: 0 0 7px silver;
 }
@@ -22,6 +27,9 @@
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+.products .card .card-body{
+  background-color:#f2f2f2;
 }
 .off-product {
   position: absolute;

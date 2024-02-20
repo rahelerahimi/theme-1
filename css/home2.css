@@ -1,3 +1,4 @@
+
 .homepage-02 .text-ourservices {
   color: #192735;
   font-weight: bold;
@@ -9,9 +10,16 @@
 .homepage-02 .projects-home-2 {
   margin: 7em 0;
 }
-
+.projects-home-2 .swiper-wrapper {
+  height: 300px !important;
+  margin-bottom: 3em;
+}
 .homepage-02 .projects .card:hover::after {
   background-color: #0f2233bd;
+}
+
+.homepage-02 .swiper-pagination-bullet{
+  background-color: #2a4359!important;
 }
 .homepage-02  .banner {
   margin: 6em 0;
@@ -59,7 +67,7 @@
 margin: 7.5em 0 0 0;
 }
 .homepage-02 .blog {
-  margin: 7em 0 0 0;
+  margin: 6em 0 2em 0;
 }
 /* **************************************** */
 @media screen and (min-width: 992px) {

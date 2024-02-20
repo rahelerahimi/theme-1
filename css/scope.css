@@ -5,6 +5,9 @@
   .carousel-caption h5 {
     font-size: 2em;
   }
+  .services-top {
+    margin-top: -6.5em;
+  }
 }
 /* big mobile */
 @media screen and (min-width: 768px) {
@@ -23,6 +26,27 @@
   .carousel-caption p {
     width: 75%;
     font-size: 1em;
+  }
+  .services-top {
+    margin-top: -4em;
+  }
+  .services-top .card {
+    border-radius:0;
+  }
+  
+  .services-top .servicesright-radius{
+    border-top-right-radius:1em ;
+    border-bottom-right-radius:1em ;
+  }
+  .services-top .servicesleft-radius{
+    border-top-left-radius:1em ;
+    border-bottom-left-radius:1em ;
+  }
+  .services-top .card-title {
+    font-size: 1em;
+  }
+  .services-top .card-text {
+    font-size: 0.9em;
   }
   .Quote .icon-email {
     display: block;
@@ -81,9 +105,18 @@
   .carousel-head img {
     height: 600px;
   }
+  .services-top {
+    margin-top: -7em;
+  }
+  .services-top .card-title {
+    font-size: 1.3em;
+  }
+  .services-top .card-text {
+    font-size: 1em;
+  }
   .parent-services {
-  padding: 3em 3em 1em 3em;
-}
+    padding: 3em 3em 1em 3em;
+  }
   .footer .list-footer-right ul,
   .footer .list-footer-left ul {
     width: auto;

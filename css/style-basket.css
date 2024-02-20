@@ -1,3 +1,9 @@
+ .basket{
+  margin-top: 6em;
+ }
+ .basket .table {
+  --bs-table-bg:#f2f2f2!important;
+}
 .basket table tr {
   vertical-align: middle;
   text-align: center;
@@ -21,7 +27,7 @@
   color: #666666;
 }
 .basket table .product-delete {
-  color: gray;
+  color: rgb(128, 128, 128);
   cursor: pointer;
 }
 .basket table .product-delete:hover {
